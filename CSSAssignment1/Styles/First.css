@@ -1,0 +1,329 @@
+*{
+	font-family:Arial;
+	margin:0;
+	padding:0;
+}
+
+a,a:link,a:active,a:visited
+{
+	color:black;
+	text-decoration:none;
+}
+
+ul li {
+	list-style:none;
+}
+
+#header {
+	background: #68f;
+	display:flex;
+}
+
+#header ul {
+	flex:1;
+	text-align: center;
+	padding: 18px 0px 7px 0px;
+}
+
+#header ul li {
+	display:inline-block;
+}
+
+#header ul li a {
+	color:#fff;
+	padding:10px;
+	display:inline-block;
+	border: solid thin white;
+	transition:1s;
+	border-radius:5px;
+	}
+	
+#header ul li a:hover {
+	background:#fff;
+	color:#888;
+}	
+
+#header ul li:nth-child(2) a {
+	background: #f96;
+	border-bottom: solid 3px #d74;
+}
+
+#header ul li:nth-child(2) a:active
+{
+	margin-top:3px;
+	border: none;
+}
+
+.socialmedia {
+	display:flex;
+	padding:13px 0px 0px 0px
+}
+.fab.fa-facebook-square {
+	font-size:23px;
+	padding:5px;
+	color:#fff;
+}
+
+.fab.fa-instagram {
+	font-size:23px;
+	padding:5px;
+	color:#fff;
+}
+.fab.fa-google-plus-g {
+	font-size:23px;
+	padding:5px;
+	color:#fff;
+}
+
+.logo {
+	/*width:80px;*/
+	padding:30px;
+}
+
+#cover {
+	display:flex;
+	background:url("../images/homebg.png");
+}
+
+#cover .div1 {
+	margin-top:50px;
+	margin-left:100px;
+	margin-bottom:150px;
+	margin-right:50px;
+	color:white;
+}
+
+#cover  img{
+	
+	margin-top:50px;
+	margin-left:50px;
+	margin-bottom:150px;
+	margin-right:100px;
+	height:450px;
+}
+
+#cover .div1 .button1 {
+	height:40px;
+	width:97px;
+	background-color:red;
+	color:white;
+	margin:40px 20px 40px 10px;
+	border:none;
+	border-radius:3px;
+}
+
+#cover .div1 .button2 {
+	height:40px;
+	width:97px;
+	background-color:blue;
+	color:white;
+	border:none;
+	border-radius:3px;
+}
+
+#body {
+	background:url("../images/bodybg.png");
+}
+#cover .heading {
+	font-size:229%;
+}
+
+.topic {
+	
+	font-size:164%;
+	text-align:center;
+	color:#68f;
+	margin-top:50;
+}
+
+.paragraph {
+	text-align:center;
+	font-size:89%;
+	color:#888;
+	margin:20px 0px 0px 0px;
+}
+
+#features .combine .usability img {
+	width: 69px;
+	height: 50px;
+}
+#features .combine .parallex img {
+	width: 69px;
+	height: 50px;
+}
+
+#features .combine .unlimited img {
+	width: 69px;
+	height: 50px;
+}
+
+#features .combine .usability {
+	display: flex;
+	margin:0px 10px 0px 0px;
+}
+
+#features .combine .parallex {
+	margin:0px 10px 0px 10px;
+	display: flex;
+}
+
+#features .combine .unlimited {
+	display: flex;
+	margin:0px 0px 0px 10px;
+}
+
+#features .combine {
+	display:flex;
+	margin:84px 88px;
+}
+
+.content {
+	margin:0px 0px 0px 10px ;
+	text-align: justify;
+}
+
+.combine h2 {
+	font-size:18px;
+}
+
+.combine p {
+	font-size:14px;
+	color:#666;
+}
+
+#features .image2 {
+	margin:0px 80px 0px 80px;
+}
+
+#screenshots .cloud1 {
+	display:flex;
+}
+
+#screenshots .cloud1 .combine1 {
+	margin:166px 50px 0px 50px;
+}
+
+.phone {
+	margin:50;
+	height:500;
+}
+
+#screenshots  .heading2 {
+	margin:30px 0px 21px 0px
+}
+
+#screenshots .paragraph2 {
+	margin: 0px 171px 0px 0px;
+	color:#666;
+}
+
+#screenshots .cloud2 {
+	display:flex;
+}
+
+#screenshots .paragraph3 {
+	margin:0px 279px 0px 0px;
+	color:#666;
+}
+
+#screenshots .div2 {
+	display:flex;
+}
+
+.div4 {
+	margin: 148px 0px 0px 0px;
+}
+
+.div4 .paragraph3 {
+	margin: 0px 261px 0px 0px;
+}
+
+#reviews .review1 {
+	display:flex;
+	padding: 1px 0px 30px 0px;
+}
+
+#reviews .review2 {
+	display:flex;
+	padding:1px 0px 30px 0px;
+}
+#reviews .review1 .div6{
+	font-size:14px;
+	padding: 100px 10px 10px 60px;
+}
+#reviews .review1 .div7 {
+	font-size:14px;
+	padding: 100px 10px 10px 60px;
+}
+#reviews .review2 .div8 {
+	font-size:14px;
+	margin: 0px 0px 0px 59px;
+}
+#reviews .review2 .div9 {
+	font-size:14px;
+	margin: 0px 137px 0px 182px;
+}
+
+.fas.fa-quote-left {
+	color:#69f;
+}
+.fas.fa-quote-right {
+	color:#69f;
+}
+
+.download {
+	padding:0px 0px 0px 0px;
+	display:flex;
+	background-color:#69f;
+}
+.imagedownload {
+	margin-top:74px;
+	width: 53%;
+	height: 64%;
+}
+
+.application {
+	color:#fff;
+	margin:50px 115px 0px 73px;
+}
+.apphead {
+	margin-top:10px;
+}
+.apppara{
+	margin-top:16px;
+}
+.icon {
+	margin-top:10px;
+}
+
+#footer {
+	background-color:#333;
+}
+.foot {
+	display:flex;
+}
+.logoimage {
+	padding: 20px;
+    width: 10%;
+    height: 4%;
+}
+#list2 {
+	flex:1;
+	text-align: center;
+	padding: 14px 10px 7px 33px;
+}
+#footer ul li a {
+	color:#fff;
+	padding:10px;
+	display:inline-block;
+	transition:1s;
+	}
+#list2 li{
+	display:inline-block;
+}
+
+.paragraph4 {
+	text-align:center;
+	color:#888;
+	padding:27px 0px 0px 40px;
+}
