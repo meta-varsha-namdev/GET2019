@@ -1,0 +1,86 @@
+body{
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+.container {
+    width: 85%;
+    margin:auto;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    border-bottom: 1px solid #e5e5e5;
+}
+.container.blog-header py-3 .col-4 pt-1 a{
+    text-decoration: none;
+}
+.fas.fa-search {
+    padding: 0px 15px 0px 0px;
+    color:#888;
+}
+.nav {
+    margin-bottom:10px;
+}
+.nav-link {
+    color:#888;
+}
+.col-md-6 .mainheading {
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:52px;
+}
+.col-md-6 .mainpara {
+    font-size: 19px;
+}
+.card-body .text-dark {
+    font-size: 25px;  
+}
+.img-thumbnail {
+    width:401px;
+}
+.para1 {
+    padding:3px 0px;
+}
+.row .heading1 {
+    padding:34px 0px 0px 0px;
+}
+.container .row .button1 {
+    background-color:#fff;
+    color:rgb(80, 147, 235);
+    text-align:center;
+    width:62px;
+    height:35px;
+    border-color:rgb(80, 147, 235); 
+    border-width: .5px;
+    border-radius: 30px;
+    margin:0px 0px 50px 0px;
+}
+.container .row .button1:hover {
+    color:#fff;
+    background:rgb(80, 147, 235); 
+}
+.container .row .button2 {
+    background-color:#fff;
+    color:#999;
+    text-align:center;
+    width:62px;
+    height:35px;
+    border-color:#999;
+    border-width: .5px;
+    border-radius: 30px;
+    margin:0px 0px 50px 0px;
+}
+.row .col-md-4 .jumbotron {
+    background-color: #eee;
+    padding:3px 6px 1px 14px;
+}
+.container-fluid {
+    background-color: antiquewhite;
+}
+a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+.margin-bottom-0{
+    margin-bottom: 0px;
+}
