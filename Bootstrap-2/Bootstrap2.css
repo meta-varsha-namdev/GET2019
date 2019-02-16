@@ -1,0 +1,102 @@
+.container-fluid .image1 {
+    width: 58px;
+    height:35px;
+    padding:6px 16px;
+}
+
+#sidebar .sidebar-header {
+    padding:5px 0px 0px 0px;
+}
+
+.container-fluid .annex {
+    display:flex;
+    padding: 50px 0px 22px 22px; 
+}
+
+.container-fluid.paragraph{
+    font-size:small;
+}
+
+.fas.fa-desktop {
+    color:#888;
+    padding-right: 15px;
+}
+
+.fas.fa-layer-group {
+    color:#888;
+    padding-right: 15px;
+}
+
+.fas.fa-calendar-times {
+    color:#888;
+    padding-right: 15px;
+}
+
+.fas.fa-bullseye
+{
+    color:#888;
+    padding-right: 15px;
+}
+
+.fab.fa-wpforms {
+    color:#888;
+    padding-right: 15px;
+}
+
+.fas.fa-tachometer-alt {
+    color:#888;
+    padding-right: 15px;
+}
+
+.fas.fa-fill-drip {
+    color:#888;
+    padding-right: 15px;
+}
+
+.fas.fa-table {
+    color:#888;
+    padding-right: 15px;
+}
+
+.fas.fa-map-marker-alt {
+    color:#888;
+    padding-right: 15px;
+}
+
+.fas.fa-file {
+    color:#888;
+    padding-right: 15px;
+}
+a.text-secondary:hover {
+    color: rgb(92, 53, 233) !important;
+}
+
+a i:hover {
+    color: rgb(92, 53, 233) !important;
+}
+
+a.text-secondary:active {
+    color: rgb(92, 53, 233) !important;
+}
+
+/*a i:active {
+    color: rgb(92, 53, 233) !important;
+}
+
+.badge1 {
+    margin: 0px 0px 0px 28px;
+}*/
+
+.badge2 {
+    margin: 0px 0px 0px 64px;
+}
+
+.badge3 {
+    margin: 0px 0px 0px 69px;
+}
+
+#sidebar {
+    overflow-y:scroll;
+    width: 231px;
+    height: 551px;
+}
