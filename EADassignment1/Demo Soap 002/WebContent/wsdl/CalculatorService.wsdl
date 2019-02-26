@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://service.soap.metacube.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://service.soap.metacube.com" xmlns:intf="http://service.soap.metacube.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://service.soap.metacube.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="multiply">
+    <complexType>
+     <sequence>
+      <element name="a" type="xsd:int"/>
+      <element name="b" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="multiplyResponse">
+    <complexType>
+     <sequence>
+      <element name="multiplyReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="area">
+    <complexType>
+     <sequence>
+      <element name="a" type="xsd:int"/>
+      <element name="b" type="xsd:int"/>
+      <element name="c" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="areaResponse">
+    <complexType>
+     <sequence>
+      <element name="areaReturn" type="xsd:float"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="sayHello">
+    <complexType/>
+   </element>
+   <element name="sayHelloResponse">
+    <complexType>
+     <sequence>
+      <element name="sayHelloReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="addition">
+    <complexType>
+     <sequence>
+      <element name="a" type="xsd:int"/>
+      <element name="b" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="additionResponse">
+    <complexType>
+     <sequence>
+      <element name="additionReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="additionResponse">
+
+      <wsdl:part element="impl:additionResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="sayHelloResponse">
+
+      <wsdl:part element="impl:sayHelloResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="areaResponse">
+
+      <wsdl:part element="impl:areaResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="additionRequest">
+
+      <wsdl:part element="impl:addition" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="multiplyResponse">
+
+      <wsdl:part element="impl:multiplyResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="multiplyRequest">
+
+      <wsdl:part element="impl:multiply" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="areaRequest">
+
+      <wsdl:part element="impl:area" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="sayHelloRequest">
+
+      <wsdl:part element="impl:sayHello" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="CalculatorService">
+
+      <wsdl:operation name="multiply">
+
+         <wsdl:input message="impl:multiplyRequest" name="multiplyRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:multiplyResponse" name="multiplyResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="area">
+
+         <wsdl:input message="impl:areaRequest" name="areaRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:areaResponse" name="areaResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="sayHello">
+
+         <wsdl:input message="impl:sayHelloRequest" name="sayHelloRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:sayHelloResponse" name="sayHelloResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="addition">
+
+         <wsdl:input message="impl:additionRequest" name="additionRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:additionResponse" name="additionResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="CalculatorServiceSoapBinding" type="impl:CalculatorService">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="multiply">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="multiplyRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="multiplyResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="area">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="areaRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="areaResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="sayHello">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="sayHelloRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="sayHelloResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="addition">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="additionRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="additionResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="CalculatorServiceService">
+
+      <wsdl:port binding="impl:CalculatorServiceSoapBinding" name="CalculatorService">
+
+         <wsdlsoap:address location="http://localhost:8080/Demo_Soap_002/services/CalculatorService"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>
