@@ -15,7 +15,7 @@ public class ConnectionFactory {
 		Connection connection = null;
 		String url = "jdbc:mysql://localhost:3306/product";
 		String username = "root";
-		String password = "root";
+		String password = "Root0";
 		String driver = "com.mysql.jdbc.Driver";
 
 		try {
