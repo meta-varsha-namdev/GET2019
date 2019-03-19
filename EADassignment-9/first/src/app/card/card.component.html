@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+
+  <body class="mt-5">
+    
+    <!--card for user details-->
+    <div class="container">
+        <div class="row ">
+          <!--repeat card for every user-->
+            <div  class="col-md-4 my-3" *ngFor="let user of array_of_user" >
+              <div class="card w-100 p-5">
+                  <div class=" d-flex justify-content-between">
+                      <i class="fas fa-user icon px-5"></i>
+                      <div class="px-5">
+                         <p class="font-weight-bold">{{user.name}}</p>
+                         <p><i class="fas fa-phone px-2"></i>{{user.contact}}</p>
+                         <p><i class="fas fa-map-marker-alt px-2"></i>{{user.location}}</p>
+                      </div>
+                  </div>
+                  <button type="button" class="btn btn-light" [class.selected]="user === selectedUser" (click)="onSelect(user)"><i class="fas fa-user-edit px-2"></i>Edit</button>
+               </div>
+            </div>
+        </div>
+      </div>
+
+      <!--user details if user is selected-->
+      <div class="container" *ngIf="selectedUser">
+ 
+        <h2>{{selectedUser.name | uppercase}} </h2>
+        <h2>{{selectedUser.contact | uppercase}} </h2>
+        <h2>{{selectedUser.location | uppercase}} </h2>
+       
+      </div>
+      
+
+  </body>
+</html>
